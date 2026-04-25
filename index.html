@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root {
       --bg: #0d1117;
@@ -170,7 +170,7 @@
     .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; align-items: stretch; }
     .project { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: clip; box-shadow: var(--shadow); transition: transform .3s ease, box-shadow .3s ease; display: grid; grid-template-rows: auto 1fr auto; }
     .project:hover { transform: translateY(-4px); }
-    .project-img { aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--border); }
+    .project-img { aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--border); width: 100%; }
     .project-body { padding: 16px 16px 8px; }
     .project h3 { margin: 0 0 8px; color: var(--accent); font-size: 1.1rem; }
     .project p { margin: 0; color: var(--muted); }
@@ -273,7 +273,6 @@
         <a class="btn" href="https://www.linkedin.com/in/shouvik007/" target="_blank" rel="noopener"> <i class="fa-brands fa-square-linkedin"></i> LinkedIn</a>
         <a class="btn" href="https://drive.google.com/file/d/1rjKcAEa8ZZ5KzysbJJi37ZrWarX5czuw/view?usp=sharing"><i class="fa-solid fa-file"></i> CV</a>
       </div>
-
     </section>
 
     <section id="education" class="reveal" aria-labelledby="edu-title">
@@ -330,9 +329,11 @@
       </div>
     </section>
 
+    <!-- Projects — all 3 cards inside one grid -->
     <section id="projects" class="reveal" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
       <div class="projects">
+
         <!-- Project 1: Online Security System -->
         <article class="project" aria-labelledby="p1-title">
           <img
@@ -380,29 +381,28 @@
             <a class="btn" href="https://github.com/Skyborg141/Heart-Disease-Prediction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
           </div>
         </article>
-      </div>
-    </section>
 
-    <!-- Project 3: AuroraWeather -->
+        <!-- Project 3: AuroraWeather -->
         <article class="project" aria-labelledby="p3-title">
           <img
             class="project-img"
-            src="https://drive.google.com/file/d/1xfDD8dZtou1YzvxVDqvaHbdD_kajczMb/view?usp=drive_link"
-            alt="Dark mode weather dashboard interface for Dhaka showing a thunderstorm with 28 degrees Celsius, high humidity, and hourly forecast details"
+            src="https://drive.google.com/uc?export=view&id=1xfDD8dZtou1YzvxVDqvaHbdD_kajczMb"
+            alt="Dark mode weather dashboard interface for AuroraWeather showing real-time forecast"
             loading="lazy"
             width="1200"
             height="675"
           />
           <div class="project-body">
-            <h3 id="p2-title">AuroraWeather</h3>
+            <h3 id="p3-title">AuroraWeather</h3>
             <p class="muted">
-              AuroraWeather is a beautiful browser-based weather app built with vanilla HTML, CSS, and JavaScript, using Vite as the build tool. It detects your location via GPS or lets you search any city with autocomplete. It shows real-time weather details like temperature, humidity, wind, UV index, an hourly strip, a 7-day forecast, and an animated sunrise & sunset arc. To run locally, clone the repo, run `npm install`, then `npm run dev`.
+              AuroraWeather is a beautiful browser-based weather app built with vanilla HTML, CSS, and JavaScript, using Vite as the build tool. It detects your location via GPS or lets you search any city with autocomplete. It shows real-time weather details like temperature, humidity, wind, UV index, an hourly strip, a 7-day forecast, and an animated sunrise &amp; sunset arc.
             </p>
           </div>
           <div class="project-footer">
             <a class="btn" href="https://skyborg141.github.io/Auroraweather/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
           </div>
         </article>
+
       </div>
     </section>
 
@@ -430,7 +430,13 @@
             <dt id="s-tools">Developer Tools</dt>
             <dd>
               <div class="badges">
-                <span class="badge">Google Antigravity, Visual Studio Code, Jupyter Notebook, Colab, Github, Postman, JIRA, Selenium</span>
+                <span class="badge">Visual Studio Code</span>
+                <span class="badge">Jupyter Notebook</span>
+                <span class="badge">Colab</span>
+                <span class="badge">Github</span>
+                <span class="badge">Postman</span>
+                <span class="badge">JIRA</span>
+                <span class="badge">Selenium</span>
               </div>
             </dd>
           </dl>
@@ -540,9 +546,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
